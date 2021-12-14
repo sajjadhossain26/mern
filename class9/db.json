@@ -1,0 +1,11 @@
+{
+  "students": [
+    { "name": "sajjad hossain", "age": 20, "skill": "mern" },
+    { "name": "sajjad hossain", "age": 20, "skill": "mern" },
+    { "name": "sajjad hossain", "age": 20, "skill": "mern" },
+    { "name": "sajjad hossain", "age": 20, "skill": "mern" },
+    { "name": "sajjad hossain", "age": 20, "skill": "mern" },
+    { "name": "sajjad hossain", "age": 20, "skill": "mern" },
+    { "name": "sajjad hossain", "age": 20, "skill": "mern" }
+  ]
+}
