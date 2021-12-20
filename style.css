@@ -1,0 +1,205 @@
+@media only screen and (max-width: 500px) {
+.products.columns-4 li {
+    width: 90%!important;
+}
+.header-text span {
+    color: white!important;
+}
+  
+body {
+/*   overflow-y: hidden; /* Hide vertical scrollbar */ */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+  .ast-woocommerce-container {
+    margin: auto!important;
+    display: block;
+    text-align: center;
+    width: 90%!important;
+    margin-left: 9%!important;
+}
+  .hfe-nav-menu__layout-horizontal a {
+    text-align: left!important;
+    display: block;
+    padding-left: 10%;
+}
+.hfe-nav-menu a {
+    text-align: left!important;
+    display: block!important;
+}
+.cf7column.customf .wpcf7-form-control.wpcf7-submit {
+  max-width:   156px !important;
+  margin-left: 149px !important;
+}
+
+.eael-contact-form-7-wrapper {
+  width: 70% !important;
+  margin: auto;
+}
+  .myhomeproduct {
+    margin-left: 11%;
+}
+}
+@media only screen and (max-width: 767px){
+  .my-box{
+    margin-bottom:20px!important;
+  }
+  h2.elementor-heading-title.elementor-size-default {
+    line-height: 30px!important;
+}
+  .element.elementor-element-dbfc973.elementor-section-content-top.elementor-section-stretched.elementor-hidden-mobile.elementor-hidden-desktop.elementor-hidden-tablet.elementor-section-boxed.elementor-section-height-default.elementor-section-height-default {
+    display: none!important;
+}
+  .ementor-column.elementor-col-100.elementor-top-column.elementor-element.elementor-element-3421274 {
+    display: none!important;
+}
+  .elementor-column.elementor-col-100.elementor-top-column.elementor-element.elementor-element-3421274 {
+    display: none;
+}
+  section.elementor-section.elementor-top-section.elementor-element.elementor-element-dbfc973.elementor-section-content-top.elementor-section-stretched.elementor-hidden-mobile.elementor-hidden-desktop.elementor-hidden-tablet.elementor-section-boxed.elementor-section-height-default.elementor-section-height-default {
+    display: none;
+}
+
+section.elementor-section.elementor-top-section.elementor-element.elementor-element-1c811b5.elementor-section-full_width.elementor-section-stretched.elementor-hidden-desktop.elementor-hidden-tablet.elementor-hidden-mobile.elementor-section-height-default.elementor-section-height-default {
+    display: none;
+}
+section.elementor-section.elementor-top-section.elementor-element.elementor-element-bd6d214.elementor-reverse-mobile.elementor-hidden-desktop.elementor-hidden-tablet.elementor-hidden-mobile.elementor-section-boxed.elementor-section-height-default.elementor-section-height-default {
+    display: none;
+}
+}
+@media only screen and (max-width: 400px) {
+ul.products.columns-4 li {
+    width: 90%!important;
+  
+}
+  h2.elementor-heading-title.elementor-size-default {
+    line-height: 30px!important;
+}
+
+.ast-woocommerce-container {
+    margin: auto!important;
+    display: block;
+    text-align: center;
+    width: 90%!important;
+    margin-left: 10%!important;
+}
+ .hfe-nav-menu__layout-horizontal a {
+    text-align: left!important;
+    display: block;
+    padding-left: 10%;
+}
+ .hfe-nav-menu a {
+    text-align: left!important;
+    display: block!important;
+}
+.cf7column.customf .wpcf7-form-control.wpcf7-submit {
+  max-width:   156px !important;
+  margin-left: 149px !important;
+}
+
+.eael-contact-form-7-wrapper {
+	width: 50% !important;
+	margin-left: 10%;
+}
+  .myhomeproduct {
+    margin-left: 10%;
+}
+  input.wpcf7-form-control.wpcf7-submit {
+    width: 100px!important;
+}
+}
+/* end responsive css */
+
+ul.products.columns-4 li {
+    border: 1px solid #ddd;
+    padding: 30px !important;
+    text-align: center!important;
+    box-shadow: 0px 0px 11px 0px #ddd;
+}
+
+ul.products.columns-4 .star-rating {
+	margin: auto !important;
+	width: 75px !important;
+}
+ul.products.columns-4 img {
+    width: 200px!important;
+    margin: auto!important;
+    height: 259px!important;
+}
+email.wpcf7-validates-as-required.wpcf7-validates-as-email {
+    color: white !important;
+}
+.cf7column input {
+	color: white !important;
+}
+.my-box {
+    border: 1px solid #ddd;
+    margin: 0px 10px;
+    box-shadow: 0px 1px 10px 2px #ddd;
+    transition:.4s;
+    background: white;
+}
+.my-box:hover{
+  box-shadow:none;
+}
+a.bdt-slide-btn:hover{
+  background: #1BAB6E!important;
+}
+.elementor-button-wrapper a {
+    background: #1BAB6E!important;
+    color: white!important;
+    border-radius: 5px!important;
+}
+.bdt-prime-slider-skin-general .bdt-slide-btn .bdt-slide-btn-icon {
+  background: #1BAB6E!important;
+}
+span.wpcf7-form-control-wrap.your-email input {
+    background: white!important;
+    color:black!important;
+
+}
+input.wpcf7-form-control.wpcf7-submit {
+    background: #1BAB6E!important;
+}
+a.bdt-slide-btn:hover span.bdt-slide-btn-icon {
+  background:white!important;
+  color:black!important;
+}
+a.bdt-slide-btn:hover span.bdt-slide-btn-icon svg{
+  color:black!important;
+}
+a.elementor-button-link.elementor-button.elementor-size-md:hover {
+    background: black!important;
+}
+.remove-icon {
+    padding: 5px;
+    padding-top: 0; 
+    color: red;
+    font-size: 16px;
+    font-weight: bold;
+}
+header#masthead img {
+    width: 270px;
+    margin-left: 34px;
+}
+.myhomeproduct .attachment-woocommerce_thumbnail.size-woocommerce_thumbnail {
+    height: 192px !important;
+    width: 300px !important;
+}
+.elementor-column.elementor-col-50.elementor-top-column.elementor-element.elementor-element-efc9e69 {
+    background: #1BAB6E;
+}
+.nb-notice-wrap.nb-top-fixed.nb-layout-1 {
+    display: none;
+}
+.nb-notice-wrap.nb-bottom.nb-layout-1 {
+    display: none;
+}
+section.related.products li {
+    width: 270px!important;
+}
+li.ast-article-single.product.type-product.post-1740.status-publish.first.instock.product_cat-all-licenses.product_cat-office-license.product_cat-popular.product_cat-windows-license.product_tag-microsoft-office-windows-10.product_tag-microsoft-office-2019-professional-plus.product_tag-windows-10.has-post-thumbnail.sale.virtual.purchasable.product-type-simple img {
+    width: 162px!important;
+}
+li.ast-article-single.product.type-product.post-1714.status-publish.instock.product_cat-all-licenses.product_cat-office-license.product_cat-popular.has-post-thumbnail.sale.virtual.purchasable.product-type-simple img {
+    width: 155px!important;
+}
