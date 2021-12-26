@@ -44,3 +44,20 @@ familyPhone.map((data, index) => {
   
   `;
 });
+
+const students = document.querySelector(".students-data");
+devs.map((data, index) => {
+  students.innerHTML += `
+    <div class="team-item">
+      <img
+        src="${data.photo}"
+        alt=""
+      />
+     <h5>ROLL Number :  ${index + 1}</h5>
+      <h1>${data.name}</h1>
+      <h3>${data.skill}</h3>
+      <h3>${data.location}</h3>
+    </div>
+  
+  `;
+});

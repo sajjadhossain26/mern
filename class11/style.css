@@ -48,3 +48,10 @@ td {
   height: 50px;
   border-radius: 0%;
 }
+.students-data {
+  display: flex;
+  max-width: 1000px;
+  margin: auto;
+  flex-wrap: wrap;
+  align-items: center;
+}
