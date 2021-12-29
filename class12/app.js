@@ -39,6 +39,8 @@ send.addEventListener("click", () => {
   } else {
     result.innerHTML = agecal(name.value, year.value);
   }
+  name.value = "";
+  year.value = "";
 });
 
 const name1 = document.querySelector("#name1");
@@ -62,4 +64,7 @@ send1.addEventListener("click", () => {
   } else {
     result1.innerHTML = bibahoage(name1.value, year1.value, gender.value);
   }
+  name1.value = "";
+  year1.value = "";
+  gender.value = "";
 });
