@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css" />
-
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -15,42 +13,93 @@
     />
   </head>
   <body>
-    <div class="form">
-      <div class="card w-75 mx-auto m-5 shadow">
-        <div class="card-header">
-          <h1 class="card-title text-center">Age Calculator</h1>
+    <div id="age-calculate">
+      <div class="card shadow w-50 m-auto text-center mb-5">
+        <div class="card-title">
+          <div class="card-heading">
+            <h1>Age Calculation</h1>
+          </div>
         </div>
         <div class="card-body">
           <div class="form-group">
             <input
               id="name"
-              type="text"
-              placeholder="Name"
               class="form-control"
+              type="text"
+              placeholder="NAME"
             />
           </div>
           <div class="form-group">
             <input
-              placeholder="Year"
               id="year"
-              type="text"
               class="form-control"
+              type="text"
+              placeholder="YEAR"
             />
           </div>
           <div class="form-group">
             <input
               id="send"
-              class="btn btn-block btn btn-primary"
+              class="btn btn-primary"
               type="submit"
-              class="form-control"
-              value="SEND"
+              placeholder="SEND"
             />
           </div>
         </div>
         <div class="card-footer">
-          <p id="ptext">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde,
-            tempora!
+          <p id="result">
+            Here you can see the result please put your name and year
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- bibaho calculator -->
+    <div id="bibaho-calculator">
+      <div class="card shadow w-50 m-auto text-center">
+        <div class="card-title">
+          <div class="card-heading">
+            <h1>bibaho Calculation</h1>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="form-group">
+            <input
+              id="name1"
+              class="form-control"
+              type="text"
+              placeholder="NAME"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              id="gender"
+              class="form-control"
+              type="text"
+              placeholder="GENDER"
+            />
+            <p id="msg" class="text-left"></p>
+          </div>
+          <div class="form-group">
+            <input
+              id="year1"
+              class="form-control"
+              type="text"
+              placeholder="YEAR"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              id="send1"
+              class="btn btn-primary"
+              type="submit"
+              placeholder="SEND"
+            />
+          </div>
+        </div>
+        <div class="card-footer">
+          <p id="result1">
+            Here you can see the result please put your name and year
           </p>
         </div>
       </div>

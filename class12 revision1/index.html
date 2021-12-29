@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="form">
+      <div class="card w-75 mx-auto m-5 shadow">
+        <div class="card-header">
+          <h1 class="card-title text-center">Age Calculator</h1>
+        </div>
+        <div class="card-body">
+          <div class="form-group">
+            <input
+              id="name"
+              type="text"
+              placeholder="Name"
+              class="form-control"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              placeholder="Year"
+              id="year"
+              type="text"
+              class="form-control"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              id="send"
+              class="btn btn-block btn btn-primary"
+              type="submit"
+              class="form-control"
+              value="SEND"
+            />
+          </div>
+        </div>
+        <div class="card-footer">
+          <p id="ptext">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde,
+            tempora!
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="./functions.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
