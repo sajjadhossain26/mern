@@ -104,6 +104,41 @@
         </div>
       </div>
     </div>
+
+    <!-- currency converter -->
+    <div class="card w-50 shadow text-center m-auto">
+      <div class="card-header">
+        <h1>convert your currency here</h1>
+      </div>
+      <div class="card-body">
+        <div class="form-group">
+          <input
+            id="amount"
+            class="form-control"
+            type="text"
+            placeholder="Type amount here"
+          />
+        </div>
+        <div class="form-group">
+          <select name="" id="getamount" class="form-control">
+            <option class="form-control" value="85">USD</option>
+            <option class="form-control" value="96">EURO</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <input
+            class="btn btn btn-primary btn btn-block"
+            type="submit"
+            value="CONVERT"
+            name=""
+            id="convert"
+          />
+        </div>
+      </div>
+      <div class="card-footer">
+        <p id="convertResult">Here you can see the result</p>
+      </div>
+    </div>
     <script src="./functions.js"></script>
     <script src="./app.js"></script>
   </body>
