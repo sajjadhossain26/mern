@@ -55,3 +55,27 @@ convert.addEventListener("click", () => {
     getamount.value * amount.value
   } taka`;
 });
+
+/**
+ * full form
+ */
+
+const name2 = document.querySelector("#name2");
+const email2 = document.querySelector("#email2");
+const number = document.querySelector("#number");
+const date = document.querySelector("#date");
+const password = document.querySelector("#password");
+const cpassword = document.querySelector("#cpassword");
+const submit2 = document.querySelector("#submit2");
+const msg2 = document.querySelector("#msg2");
+
+submit2.addEventListener("click", () => {
+  msg2.innerHTML = fullform(
+    name2.value,
+    email2.value,
+    number.value,
+    date.value,
+    password.value,
+    cpassword.value
+  );
+});

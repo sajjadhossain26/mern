@@ -12,6 +12,11 @@
       crossorigin="anonymous"
     />
   </head>
+  <style>
+    .card {
+      margin-bottom: 50px !important;
+    }
+  </style>
   <body>
     <div id="age-calculate">
       <div class="card shadow w-50 m-auto text-center mb-5">
@@ -137,6 +142,69 @@
       </div>
       <div class="card-footer">
         <p id="convertResult">Here you can see the result</p>
+      </div>
+    </div>
+
+    <!-- full form -->
+    <div class="card w-50 shadow text-center m-auto">
+      <div class="card-header">
+        <div class="h1">Full form</div>
+      </div>
+      <div class="card-body">
+        <div class="form-group">
+          <input
+            type="name"
+            id="name2"
+            class="form-control"
+            placeholder="Enter your name"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="Email"
+            id="email2"
+            class="form-control"
+            placeholder="Enter your Email"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="number"
+            id="number"
+            class="form-control"
+            placeholder="Enter your Phone Number"
+          />
+        </div>
+        <div class="form-group">
+          <input type="date" id="date" class="form-control" />
+        </div>
+        <div class="form-group">
+          <input
+            type="password"
+            id="password"
+            class="form-control"
+            placeholder="password"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="password"
+            id="cpassword"
+            class="form-control"
+            placeholder="Confirm password"
+          />
+        </div>
+
+        <div class="form-group">
+          <input
+            type="submit"
+            id="submit2"
+            class="form-control btn btn-primary btn-block"
+          />
+        </div>
+      </div>
+      <div class="card-footer">
+        <p id="msg2">Here you can see the result</p>
       </div>
     </div>
     <script src="./functions.js"></script>

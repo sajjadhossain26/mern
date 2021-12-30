@@ -65,3 +65,32 @@ function bibahoage(name, year, gender) {
     return `<p class="alert alert-danger">Please enter currect year</p>`;
   }
 }
+/**
+ * full form function
+ */
+
+function fullform(name, email, number, date, password, cpassword) {
+  let pattern = /^[a-z0-9.]*@gmail.com$/;
+
+  if (
+    name == "" ||
+    email == "" ||
+    number == "" ||
+    date == "" ||
+    password == "" ||
+    cpassword == ""
+  ) {
+    return `<p class="alert alert-danger">All field are required<p>`;
+  } else if (pattern.test(email) == false) {
+    return `<p class="alert alert-danger">please enter valid email</p>`;
+  } else if (password !== cpassword) {
+    return `<p class="alert alert-danger">your password not same</p>`;
+  } else {
+    return `<p class="alert alert-success">your name ${name},
+    your email ${email},
+    your number${number},
+    your date${date},
+    your password${password},
+    your confirm password${cpassword}</p>`;
+  }
+}
