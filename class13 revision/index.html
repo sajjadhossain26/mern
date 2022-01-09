@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="card shadow">
+            <div class="card-body">
+              <h1>Sign Up Form</h1>
+              <p class="msg"></p>
+              <form action="#" id="sign-up-form">
+                <div class="form-group">
+                  <input type="name" placeholder="name" class="form-control" />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="email"
+                    placeholder="email"
+                    class="form-control"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <select name="" id="" class="form-control">
+                    <option value="">...Location...</option>
+                    <option value="Dhaka">Dhaka</option>
+                    <option value="Chittagong">Chittagong</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <input
+                    name="gender"
+                    value="male"
+                    type="radio"
+                    id="male"
+                  /><label for="male">Male</label>
+                  <input
+                    name="gender"
+                    type="radio"
+                    id="female"
+                    value="female"
+                  /><label for="female">Female</label>
+                </div>
+                <div class="form-group">
+                  <input value="html" type="checkbox" id="html" /><label
+                    for="html"
+                    >html</label
+                  >
+                  <input value="css" type="checkbox" id="css" /><label for="css"
+                    >css</label
+                  >
+                  <input
+                    value="javascript"
+                    type="checkbox"
+                    id="javascript"
+                  /><label for="javascript">javascript</label>
+                  <input value="mern" type="checkbox" id="mern" /><label
+                    for="mern"
+                    >MERN</label
+                  >
+                </div>
+                <div class="form-group">
+                  <input type="submit" class="form-control btn btn-primary" />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./functions.js"></script>
+
+    <div class="clock"></div>
+    <script src="./app.js"></script>
+  </body>
+</html>
