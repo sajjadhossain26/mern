@@ -7,22 +7,21 @@
   position: relative;
 }
 .clocktext {
-  position: absolute;
   top: 36%;
   font-size: 30px;
   color: aqua;
-  left: -4%;
+  left: -4.7%;
   position: relative;
 }
 .clockH {
-  font-size: 50px;
+  font-size: 45px;
   font-family: ui-monospace;
 }
 .clockM {
   position: absolute;
   left: 55%;
-  top: 8px;
-  font-size: 40px;
+  top: 0px;
+  font-size: 45px;
   font-family: serif;
 }
 .clockAMPM {
