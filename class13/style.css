@@ -16,7 +16,7 @@
 }
 .clockH {
   font-size: 50px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: ui-monospace;
 }
 .clockM {
   position: absolute;
@@ -32,4 +32,15 @@
   font-size: 20px;
   font-family: initial;
   font-weight: 500;
+}
+
+.date {
+  position: absolute;
+  left: 48%;
+  font-size: 15px;
+  color: white;
+  font-family: monospace;
+}
+.clockS {
+  margin-top: -15px;
 }
