@@ -22,13 +22,26 @@ setInterval(() => {
 }, 1000);
 
 const show = document.querySelector(".date");
+const today = document.querySelector(".day");
 let date = new Date();
 let day = date.getDate();
 let year = date.getFullYear();
 let month = date.getMonth();
+
 if (month == 0) {
   month += 1;
 } else {
   month = date.getMonth();
 }
 show.innerHTML = `${zero(month)}-${zero(day)}-${zero(year)}`;
+let findday = [
+  "sunday",
+  "monday",
+  "tueseday",
+  "wednesday",
+  "thursday",
+  "friday",
+  "saturday",
+];
+let d = date.getDay();
+today.innerHTML = findday[d];

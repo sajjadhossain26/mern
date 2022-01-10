@@ -44,3 +44,12 @@
 .clockS {
   margin-top: -15px;
 }
+.day {
+  position: absolute;
+  left: 50%;
+  font-size: 20px;
+  color: #8eff26;
+  top: 118%;
+  font-weight: 500;
+  font-family: sans-serif;
+}
