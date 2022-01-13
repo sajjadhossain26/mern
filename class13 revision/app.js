@@ -37,3 +37,61 @@ setInterval(() => {
 
   clock.innerHTML = `${Math.abs(equal)} : ${m} : ${s} : ${ampm}`;
 }, 1000);
+
+const start = document.querySelector(".start");
+const stop = document.querySelector(".stop");
+const reset = document.querySelector(".reset");
+const output = document.querySelector(".output");
+const counter = document.querySelector(".counter");
+const loading = document.querySelector(".loader");
+let counterV;
+let count;
+start.addEventListener("click", () => {
+  counterV = counter.value;
+
+  count = setInterval(() => {
+    output.innerHTML = counterV;
+    if (counterV == 0) {
+      clearInterval(count);
+    }
+    counterV--;
+    let width = loadings(counter.value, counterV);
+    loading.style.width = `${width}%`;
+    if (width >= 50 && width <= 100) {
+      loading.style.background = "green";
+    } else if (width < 50 && width >= 20) {
+      loading.style.background = "yellow";
+    } else {
+      loading.style.background = "red";
+    }
+  }, 1000);
+});
+
+// start.addEventListener("click", () => {
+//   output.innerHTML = "love asitece.....";
+//   setTimeout(() => {
+//     output.innerHTML = "We love mern stack";
+//   }, 2000);
+// });
+
+// stop.addEventListener("click", () => {
+//   output.innerHTML = "nuton love asitece.....";
+//   setTimeout(() => {
+//     output.innerHTML = "We love android development";
+//   }, 2000);
+// });
+// let count = 0;
+// let clear;
+// start.addEventListener("click", function () {
+//   clear = setInterval(() => {
+//     output.innerHTML = count++;
+//   }, 1000);
+// });
+// stop.addEventListener("click", function () {
+//   clearInterval(clear);
+// });
+// reset.addEventListener("click", function () {
+//   count = 0;
+//   output.innerHTML = count;
+//   clearInterval(clear);
+// });
