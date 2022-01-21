@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="fiver-clock my-5">
+      <div class="card w-50 m-auto text-center">
+        <form action="#" class="form-inline text-center m-auto p-3 clock-form">
+          <div class="form-group mr-2">
+            <input type="date" class="form-control" />
+          </div>
+          <div class="form-group mr-2">
+            <input type="time" class="form-control" />
+          </div>
+          <div class="form-group mr-2">
+            <input
+              type="submit"
+              value="Create an order"
+              class="btn btn-success"
+            />
+          </div>
+        </form>
+      </div>
+      <div
+        class="counter d-flex w-50 m-auto text-center justify-content-center"
+      >
+        <span>00 : 00 : 00</span>
+      </div>
+    </div>
+
+    <!-- to do list app -->
+    <div class="card w-50 m-auto">
+      <div class="card-body m-auto">
+        <form action="#" class="form-inline todo">
+          <div class="form-group mr-2">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="TO DO"
+              name="name"
+            />
+          </div>
+          <div class="form-group mr-2">
+            <select name="select" id="" class="form-control">
+              <option value="">--select--</option>
+              <option value="important">important</option>
+              <option value="Most important">Most important</option>
+              <option value="Unnecessary">Unnecessary</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <input type="submit" class="btn btn-success" value="ADD" />
+          </div>
+        </form>
+        <hr />
+        <ul class="list-group addli"></ul>
+      </div>
+    </div>
+    <script src="./function.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

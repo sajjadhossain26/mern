@@ -75,6 +75,9 @@ start.addEventListener("click", () => {
 
   reset = setInterval(function () {
     showcount.innerHTML = count;
+    if (count == "") {
+      countValue.style.border = "1px solid red";
+    }
     if (count == 0) {
       clearInterval(reset);
     }
@@ -93,4 +96,18 @@ start.addEventListener("click", () => {
 
 stop.addEventListener("click", () => {
   clearInterval(reset);
+});
+
+// counter
+const cstart = document.querySelector(".c-start");
+const cstop = document.querySelector(".c-stop");
+const cshow = document.querySelector(".c-show");
+const mshow = document.querySelector(".m-show");
+let sow;
+let msow;
+cstart.addEventListener("click", () => {
+  sow = 0;
+  setInterval(() => {
+    cshow.innerHTML = sow++;
+  }, 1000);
 });
