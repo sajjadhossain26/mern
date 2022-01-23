@@ -1,0 +1,9 @@
+body {
+  background: cornsilk;
+}
+.product-card {
+  display: none;
+}
+img {
+  width: 100%;
+}
