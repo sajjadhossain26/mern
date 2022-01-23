@@ -55,68 +55,139 @@ todoForm.addEventListener("submit", function (e) {
 
 // product add
 
-const addProduct = document.querySelector(".add-product");
-const productCard = document.querySelector(".product-card");
-const closebtn = document.querySelector(".closebtn");
-const productrow = document.querySelector(".product-row");
-const productform = document.querySelector(".product-form");
+// const addProduct = document.querySelector(".add-product");
+// const productCard = document.querySelector(".product-card");
+// const closebtn = document.querySelector(".closebtn");
+// const productrow = document.querySelector(".product-row");
+// const productform = document.querySelector(".product-form");
 
-addProduct.addEventListener("click", function () {
-  productCard.style.display = "block";
-});
-closebtn.addEventListener("click", function () {
-  productCard.style.display = "none";
-});
+// addProduct.addEventListener("click", function () {
+//   productCard.style.display = "block";
+// });
+// closebtn.addEventListener("click", function () {
+//   productCard.style.display = "none";
+// });
 
-productform.addEventListener("submit", function (e) {
+// productform.addEventListener("submit", function (e) {
+//   e.preventDefault();
+//   let name = this.querySelector("input[name='name']").value;
+//   let rprice = this.querySelector("input[name='rprice']").value;
+//   let sprice = this.querySelector("input[name='sprice']").value;
+//   let photo = this.querySelector("input[name='pimage']").value;
+
+//   let arrayData;
+//   if (getdata("products")) {
+//     arrayData = getdata("products");
+//   } else {
+//     arrayData = [];
+//   }
+
+//   arrayData.push({
+//     name: name,
+//     price: rprice,
+//     saleprice: sprice,
+//     photo: photo,
+//   });
+//   senddata("products", arrayData);
+//   allproducts();
+// });
+// allproducts();
+// function allproducts() {
+//   let get = getdata("products");
+//   let data = "";
+//   get.map((pdata) => {
+//     data += `
+//     <div class="col-md-4 my-2">
+//           <div class="card">
+//             <img
+//               class="card-image"
+//               src="${pdata.photo}"
+//               alt=""
+//             />
+//             <div class="card-body">
+//               <h2>${pdata.name}</h2>
+//               <p>
+//                 <span class="regular-price">${pdata.price}$</span
+//                 ><span class="sale-price">${pdata.saleprice}$</span>
+//               </p>
+//               <button class="btn btn-success">Add to cart</button>
+//             </div>
+//           </div>
+//         </div>
+
+//   `;
+//   });
+
+//   productrow.innerHTML = data;
+// }
+
+// devs form
+const devsForm = document.querySelector(".devs-form");
+const showdevs = document.querySelector(".showdev");
+
+devsForm.addEventListener("submit", function (e) {
   e.preventDefault();
-  let name = this.querySelector("input[name='name']").value;
-  let rprice = this.querySelector("input[name='rprice']").value;
-  let sprice = this.querySelector("input[name='sprice']").value;
-  let photo = this.querySelector("input[name='pimage']").value;
 
-  let arrayData;
-  if (getdata("products")) {
-    arrayData = getdata("products");
-  } else {
-    arrayData = [];
+  let name = document.querySelector("input[name='name']").value;
+  let gender = document.querySelector("input[name='gender']:checked").value;
+  let skills = document.querySelectorAll("input[name='skill']:checked");
+  let photo = document.querySelector("input[name='photo']").value;
+
+  let skills_arr = [];
+
+  for (let i = 0; i < skills.length; i++) {
+    skills_arr.push(skills[i].value);
   }
 
-  arrayData.push({
+  let data_arr;
+  if (getdata("devs")) {
+    data_arr = getdata("devs");
+  } else {
+    data_arr = [];
+  }
+
+  data_arr.push({
     name: name,
-    price: rprice,
-    saleprice: sprice,
+    gender: gender,
+    skills: skills_arr,
     photo: photo,
   });
-  senddata("products", arrayData);
-  allproducts();
+
+  senddata("devs", data_arr);
+  alldevs();
 });
-allproducts();
-function allproducts() {
-  let get = getdata("products");
+alldevs();
+function alldevs() {
+  let getdevs = getdata("devs");
   let data = "";
-  get.map((pdata) => {
+
+  getdevs.map((d) => {
+    let lists = "";
+    d.skills.map((list) => {
+      lists += '<li class="list-group-item">' + list + "</li>";
+    });
+
     data += `
     <div class="col-md-4 my-2">
-          <div class="card">
-            <img
-              class="card-image"
-              src="${pdata.photo}"
-              alt=""
-            />
-            <div class="card-body">
-              <h2>${pdata.name}</h2>
-              <p>
-                <span class="regular-price">${pdata.price}$</span
-                ><span class="sale-price">${pdata.saleprice}$</span>
-              </p>
-              <button class="btn btn-success">Add to cart</button>
-            </div>
-          </div>
-        </div>
-  
-  `;
-  });
+              <div class="card">
+                <img
+                  style="height: 250px; object-fit: cover"
+                  src="${d.photo}"
+                  alt=""
+                />
+                <div class="card-body">
+                  <h3>${d.name}</h3>
+                  <h6>Gender: male</h6>
 
-  productrow.innerHTML = data;
+                  skill
+                  <hr />
+                  <ul class="list-group">
+                    ${lists}
+                  </ul>
+                </div>
+              </div>
+            </div>
+   `;
+  });
+  showdevs.innerHTML = data;
 }
