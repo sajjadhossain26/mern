@@ -177,8 +177,7 @@ function alldevs() {
                 />
                 <div class="card-body">
                   <h3>${d.name}</h3>
-                  <h6>Gender: male</h6>
-
+                  <h6>Gender: ${d.gender}</h6>
                   skill
                   <hr />
                   <ul class="list-group">
