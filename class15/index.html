@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 m-auto">
+          <div class="card my-3">
+            <div class="card-body">
+              <input type="checkbox" name="skill" id="php" value="php" /><label
+                for="php"
+                >PHP</label
+              ><br />
+              <input
+                type="checkbox"
+                name="skill"
+                id="react"
+                value="react"
+              /><label for="react">react</label><br />
+              <input
+                type="checkbox"
+                name="skill"
+                id="mern"
+                value="mern"
+              /><label for="mern">mern</label><br />
+              <input type="checkbox" name="skill" id="ios" value="ios" /><label
+                for="ios"
+                >ios</label
+              ><br />
+              <input
+                type="checkbox"
+                name="skill"
+                id="python"
+                value="python"
+              /><label for="python">python</label><br />
+              <input
+                type="checkbox"
+                name="skill"
+                id="golang"
+                value="golang"
+              /><label for="golang">golang</label><br />
+              <input type="checkbox" name="skill" id="wp" value="wp" /><label
+                for="wp"
+                >wp</label
+              ><br />
+              <hr />
+              <ul class="list-group show"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- anlock clock apps -->
+    <div class="container text-center">
+      <h1>Analog clock</h1>
+      <div class="row">
+        <div class="col-md-8 m-auto my-3">
+          <div class="clock">
+            <div class="h"></div>
+            <div class="m"></div>
+            <div class="s"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- calculator -->
+
+    <div class="cal my-5">
+      <div class="monitor">
+        <div class="topm">0</div>
+        <div class="mainm">0</div>
+      </div>
+      <div class="monitor-body">
+        <button onclick="allclear()" style="width: 50%">AC</button>
+        <button onclick="back()" style="width: 50%">C</button>
+        <button onclick="getvalue(7)">7</button>
+        <button onclick="getvalue(8)">8</button>
+        <button onclick="getvalue(9)">9</button>
+        <button onclick="getvalue('/')">/</button>
+        <button onclick="getvalue(4)">4</button>
+        <button onclick="getvalue(5)">5</button>
+        <button onclick="getvalue(6)">6</button>
+        <button onclick="getvalue('*')">*</button>
+        <button onclick="getvalue(1)">1</button>
+        <button onclick="getvalue(2)">2</button>
+        <button onclick="getvalue(3)">3</button>
+        <button onclick="getvalue('-')">-</button>
+        <button onclick="getvalue(0)">0</button>
+        <button onclick="getvalue('.')">.</button>
+        <button onclick="getvalue('+')">+</button>
+        <button onclick="showcal()">=</button>
+      </div>
+    </div>
+    <script src="./function.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

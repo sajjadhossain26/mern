@@ -1,0 +1,122 @@
+body {
+  background: #000;
+}
+h1 {
+  font-family: initial;
+  font-size: 50px;
+  margin: 40px 0px;
+  color: green;
+}
+.clock {
+  background-image: url(./img/clock.png);
+  background-position: center;
+  background-size: contain;
+  width: 500px;
+  height: 500px;
+  border: 8px solid #ecdd0d;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  box-shadow: -2px -3px 20px 0px #758b1d;
+}
+.clock::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: black;
+  position: absolute;
+  border-radius: 50%;
+}
+.m {
+  display: flex;
+  align-items: center;
+  background: red;
+  position: relative;
+  justify-content: center;
+  transform: rotate(274deg);
+  height: -14px;
+}
+.m::before {
+  content: "";
+  background-image: url(./img/sec.png);
+  background-position: top;
+  background-size: cover;
+  position: absolute;
+  width: 50px;
+  height: 148px;
+  top: -142px;
+}
+.s {
+  display: flex;
+  align-items: center;
+  background: red;
+  position: relative;
+  justify-content: center;
+  transform: rotate(40deg);
+}
+.s::before {
+  content: "";
+  background-image: url(./img/sec.png);
+  background-position: top;
+  background-size: cover;
+  position: absolute;
+  width: 50px;
+  height: 209px;
+  top: -186px;
+}
+.h {
+  display: flex;
+  align-items: center;
+  background: red;
+  position: relative;
+  justify-content: center;
+  transform: rotate(0deg);
+}
+.h::before {
+  content: "";
+  background-image: url(./img/min1.png);
+  background-position: top;
+  background-size: cover;
+  position: absolute;
+  width: 50px;
+  height: 140px;
+  top: -125px;
+}
+/* calculator */
+
+.cal {
+  width: 500px;
+  margin: auto;
+  background: white;
+
+  border-radius: 10px;
+  box-shadow: 0px -1px 16px 0px #ddd;
+  overflow: hidden;
+}
+.monitor {
+  background: black;
+  height: 200px;
+  border-radius: 10px 10px 0px 0px;
+}
+.monitor-body button {
+  width: 25%;
+  float: left;
+  border: none;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.monitor-body button:hover {
+  background-color: #ddd;
+}
+.monitor {
+  font-size: 30px;
+  color: white;
+  text-align: right;
+  padding: 20px;
+}
+.mainm {
+  font-size: 80px;
+}
