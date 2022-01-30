@@ -52,7 +52,6 @@ function showcal() {
   document.querySelector(".mainm").innerHTML = eval(calstring);
 }
 function allclear() {
-  alert();
   cald = [];
   document.querySelector(".topm").innerHTML = "0";
   document.querySelector(".mainm").innerHTML = "0";
