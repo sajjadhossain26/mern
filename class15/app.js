@@ -12,7 +12,7 @@ skill.forEach((data) => {
     data_arr.map((getvalue) => {
       dvalue += `
       <li class="list-group-item">${getvalue}</li>
-    
+
      `;
     });
     show.innerHTML = dvalue;
@@ -40,7 +40,7 @@ function getR(current, time) {
 }
 //
 let cald = [];
-let topm;
+
 function getvalue(val) {
   cald.push(val);
 
@@ -61,3 +61,25 @@ function back() {
   cald.pop();
   document.querySelector(".topm").innerHTML = cald.join("");
 }
+
+// const skill = document.querySelectorAll("input[name='skill']");
+// const show = document.querySelector(".show");
+
+// skill.forEach((data) => {
+//   data.addEventListener("change", function () {
+//     let all_data = document.querySelectorAll("input[name='skill']:checked");
+
+//     let data_arr = [];
+//     all_data.forEach((get_arr) => {
+//       data_arr.push(get_arr.value);
+//     });
+
+//     let data_r = "";
+//     data_arr.map((r) => {
+//       data_r += `
+//     <li class="list-group-item">${r}</li>
+//     `;
+//     });
+//     show.innerHTML = data_r;
+//   });
+// });
