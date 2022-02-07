@@ -59,3 +59,22 @@ accordionH.forEach((item) => {
     }
   });
 });
+// tab
+
+const tabePane = document.querySelectorAll(".tab-header ul li a");
+const tabe = document.querySelectorAll(".tab .tab-pane");
+
+tabePane.forEach((data) => {
+  data.addEventListener("click", function (e) {
+    e.preventDefault();
+    tabePane.forEach((item) => {
+      item.classList.remove("active");
+    });
+    data.classList.add("active");
+    let att = document.querySelector(this.getAttribute("href"));
+    tabe.forEach((data) => {
+      data.classList.remove("active");
+    });
+    att.classList.add("active");
+  });
+});

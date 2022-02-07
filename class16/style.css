@@ -10,6 +10,12 @@ body {
 html {
   font-family: "Roboto", sans-serif;
 }
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
 :root {
   --shadow1: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
   --shadow2: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
@@ -176,4 +182,42 @@ html {
 }
 .accordion .accordion-content {
   padding: 20px;
+}
+/* tab  */
+.tab {
+  background-color: white;
+  width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  box-shadow: var(--shadow2);
+}
+.tab-header ul {
+  display: flex;
+  justify-content: space-around;
+}
+.tab-header ul li {
+  width: 25%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  display: block;
+}
+.tab-header ul li a {
+  display: block;
+  border-bottom: 1px solid #ccc;
+}
+.tab-header ul li a.active {
+  display: block;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom: none;
+}
+.tab-pane {
+  margin-top: 20px;
+  display: none;
+}
+.tab-pane.active {
+  margin-top: 20px;
+  display: block;
 }
