@@ -1,0 +1,12 @@
+.modal-data img {
+  width: 180px;
+  height: auto;
+  display: block;
+  margin: auto;
+  border: 10px solid white;
+}
+.modal-data h2 {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 10px;
+}
