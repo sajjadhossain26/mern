@@ -1,9 +1,9 @@
-let name = prompt(`Type Your name`);
-let roll = Number(prompt(`Type Your Roll`));
-let bn = Number(prompt(`Type Your Bangla Mark`));
-let en = Number(prompt(`Type Your English Mark`));
-let math = Number(prompt(`Type Your Math Mark`));
-let s = Number(prompt(`Type Your Science Mark`));
+// let name = prompt(`Type Your name`);
+// let roll = Number(prompt(`Type Your Roll`));
+// let bn = Number(prompt(`Type Your Bangla Mark`));
+// let en = Number(prompt(`Type Your English Mark`));
+// let math = Number(prompt(`Type Your Math Mark`));
+// let s = Number(prompt(`Type Your Science Mark`));
 
 function FullResult() {
   //grade calculation
@@ -82,7 +82,7 @@ function FullResult() {
 
   this.cgpaa = function (bn, en, math, s) {
     if (bn == 0 || en == 0 || math == 0 || s == 0) {
-      return `You are Failed`;
+      return `F`;
     } else {
       return `Main cgpa = ${gpa} & Grade = ${result.totalgrade(gpa)}`;
     }
@@ -95,34 +95,32 @@ let totalcgpa =
   result.gpa(bn) + result.gpa(en) + result.gpa(math) + result.gpa(s);
 let cgpa = totalcgpa / 4;
 
-console.log(`
+// console.log(`
 
-    Student Name : ${name}
-    Student Roll : ${roll}
+//     Student Name : ${name}
+//     Student Roll : ${roll}
 
+//     Subject Name                Marks               GPA             GREAD
+// ...........................................................................................
+//     Bangla                  ${bn}                   ${result.gpa(
+//   bn
+// )}                  ${result.grade(bn)}
+//     English                 ${en}                   ${result.gpa(
+//   en
+// )}                  ${result.grade(en)}
+//     Math                    ${math}                 ${result.gpa(
+//   math
+// )}                  ${result.grade(math)}
+//     Science                 ${s}                    ${result.gpa(
+//   s
+// )}                  ${result.grade(s)}
 
-    Subject Name                Marks               GPA             GREAD
-...........................................................................................
-    Bangla                  ${bn}                   ${result.gpa(
-  bn
-)}                  ${result.grade(bn)}
-    English                 ${en}                   ${result.gpa(
-  en
-)}                  ${result.grade(en)}
-    Math                    ${math}                 ${result.gpa(
-  math
-)}                  ${result.grade(math)}
-    Science                 ${s}                    ${result.gpa(
-  s
-)}                  ${result.grade(s)}
+// ...........................................................................................
+//            Total CGPA = ${result.cgpaa(
+//              result.gpa(bn),
+//              result.gpa(en),
+//              result.gpa(math),
+//              result.gpa(s)
+//            )}
 
-...........................................................................................
-           Total CGPA = ${result.cgpaa(
-             result.gpa(bn),
-             result.gpa(en),
-             result.gpa(math),
-             result.gpa(s)
-           )}
-           
-
-`);
+// `);

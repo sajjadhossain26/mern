@@ -75,8 +75,10 @@ function showdata() {
                 <td><img style="width: 50px;height:50px;object-fit:cover;" src="${
                   data.photo
                 }"/></td>
-                <td><button class="btn btn-info btn-sm" data-bs-toggle="modal" data-bs-target="#student_modal">view</button>
-                <button onclick="delete_data(${index})" class="btn btn-danger btn-sm">Delete</button></td>
+                <td>
+                <button class="btn btn-info btn-sm" onclick="single_result(${index})"data-bs-toggle="modal" data-bs-target="#student_modal">view</button>
+                <button onclick="delete_data(${index})" class="btn btn-danger btn-sm">Delete</button>
+                </td>
               </tr>
 
      `;
@@ -95,7 +97,72 @@ function delete_data(id) {
     return false;
   }
 }
-
+// single exam result
+const modal_data = document.querySelector(".modal-data");
+function single_result(index) {
+  let result = new FullResult();
+  let all_data = get_data("student_app");
+  modal_data.innerHTML = `
+     <img
+                class="shadow"
+                src="${all_data[index].photo}"
+                alt=""
+              />
+              <h2>${all_data[index].name}</h2>
+              <table class="table text-center table-striped table fa-border">
+                <thead class="thead-dark">
+                  <tr>
+                    <td>SUBJECT</td>
+                    <td>MARK</td>
+                    <td>GPA</td>
+                    <td>GRADE</td>
+                    <td>CGPA</td>
+                    <td>RESULT</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Bangla</td>
+                    <td>${all_data[index].ban}</td>
+                    <td>${result.gpa(all_data[index].ban)}</td>
+                    <td>${result.grade(all_data[index].ban)}</td>
+                    <td rowspan="6">A+</td>
+                    <td rowspan="6">5.00</td>
+                  </tr>
+                  <tr>
+                    <td>English</td>
+                    <td>${all_data[index].eng}</td>
+                    <td>${result.gpa(all_data[index].eng)}</td>
+                    <td>${result.grade(all_data[index].eng)}</td>
+                  </tr>
+                  <tr>
+                    <td>Math</td>
+                    <td>${all_data[index].math}</td>
+                    <td>${result.gpa(all_data[index].math)}</td>
+                    <td>${result.grade(all_data[index].math)}</td>
+                  </tr>
+                  <tr>
+                    <td>Science</td>
+                    <td>${all_data[index].s}</td>
+                    <td>${result.gpa(all_data[index].s)}</td>
+                    <td>${result.grade(all_data[index].s)}</td>
+                  </tr>
+                  <tr>
+                    <td>Social Science</td>
+                    <td>${all_data[index].ss}</td>
+                    <td>${result.gpa(all_data[index].ss)}</td>
+                    <td>${result.grade(all_data[index].ss)}</td>
+                  </tr>
+                  <tr>
+                    <td>Religion</td>
+                    <td>${all_data[index].religion}</td>
+                    <td>${result.gpa(all_data[index].religion)}</td>
+                    <td>${result.grade(all_data[index].religion)}</td>
+                  </tr>
+                </tbody>
+              </table>
+  `;
+}
 const searce_data = document.querySelector("#searce-data");
 searce_data.addEventListener("keyup", function () {
   let all_data = get_data("student_app");
@@ -104,7 +171,8 @@ searce_data.addEventListener("keyup", function () {
     if (
       data.roll == searce_data.value ||
       data.name == searce_data.value ||
-      data.class == searce_data.value
+      data.class == searce_data.value ||
+      searce_data.value == ""
     ) {
       show += `
 
@@ -119,7 +187,7 @@ searce_data.addEventListener("keyup", function () {
                 <td><img style="width: 50px;height:50px;object-fit:cover;" src="${
                   data.photo
                 }"/></td>
-                <td><button class="btn btn-info btn-sm" data-bs-toggle="modal" data-bs-target="#student_modal">view</button>
+                <td><button class="btn btn-info btn-sm"  data-bs-toggle="modal" data-bs-target="#student_modal">view</button>
                 <button onclick="delete_data(${index})" class="btn btn-danger btn-sm">Delete</button></td>
               </tr>
 
