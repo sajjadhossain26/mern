@@ -96,6 +96,38 @@ function delete_data(id) {
   }
 }
 
+const searce_data = document.querySelector("#searce-data");
+searce_data.addEventListener("keyup", function () {
+  let all_data = get_data("student_app");
+  let show = "";
+  all_data.map((data, index) => {
+    if (
+      data.roll == searce_data.value ||
+      data.name == searce_data.value ||
+      data.class == searce_data.value
+    ) {
+      show += `
+
+              <tr>
+                <td>${index + 1}</td>
+                <td>${data.name}</td>
+                <td>${data.roll}</td>
+                <td>${data.class}</td>
+                <td>${data.gender}</td>
+                <td>A</td>
+                <td>4.50</td>
+                <td><img style="width: 50px;height:50px;object-fit:cover;" src="${
+                  data.photo
+                }"/></td>
+                <td><button class="btn btn-info btn-sm" data-bs-toggle="modal" data-bs-target="#student_modal">view</button>
+                <button onclick="delete_data(${index})" class="btn btn-danger btn-sm">Delete</button></td>
+              </tr>
+
+     `;
+    }
+  });
+  show_table.innerHTML = show;
+});
 // const student_form = document.querySelector(".student-form");
 // const show_table = document.querySelector(".show-table");
 
