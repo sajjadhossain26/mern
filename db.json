@@ -1,0 +1,44 @@
+{
+  "devs": [
+    {
+      "id": 1,
+      "name": "Sajjad Hossain",
+      "location": "Lohagara Amirabad",
+      "age": 20,
+      "skill": "Mern Stack Developer",
+      "photo": "https://scontent.fspd5-1.fna.fbcdn.net/v/t39.30808-6/c99.0.395.395a/p526x395/270610970_1421488684914370_8374195226376503272_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeHQQOWjj-2vjMr7c5V5zfaHRdOX27PoptNF05fbs-im0wg719c_SHFY_Uz8qCTV-05ylNWahXpQDCXOP6NBOoDe&_nc_ohc=s5AMs1_UYzoAX8uoHFD&_nc_ht=scontent.fspd5-1.fna&oh=00_AT_nYL5eTTdskETBR4vce22_zjemavaX5KR2fm8y7Jw3xQ&oe=620EDD95"
+    },
+    {
+      "id": 2,
+      "name": "Al-Amin",
+      "location": "Mirpur Dhaka",
+      "age": 19,
+      "skill": "IOS Developer",
+      "photo": "https://scontent.fspd5-1.fna.fbcdn.net/v/t39.30808-6/c0.225.1365.1365a/s526x395/269988192_2813277628974595_2771320828781617534_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeHTBzRQ3WzCm8eYmmnyBE9fLOA76dysMrcs4Dvp3Kwytw8i6s0XXD9afpwrWu-x-0UvJHZU9FO6vDT6K3VzyomP&_nc_ohc=OwFtoMlf7J0AX_YJwRs&tn=0-U7YtnGvZLITSub&_nc_ht=scontent.fspd5-1.fna&oh=00_AT_OlMPbbtwVXBebwsqw3QOCzXpbksde9VqIM-4VeWjI0g&oe=620F7699"
+    },
+    {
+      "id": 3,
+      "name": "Asraful Haque",
+      "location": "Dhaka",
+      "age": 25,
+      "skill": "Laravel Developer",
+      "photo": "https://cdn.powerpackelements.com/wp-content/uploads/2017/11/Team-memeber-01.png"
+    },
+    {
+      "id": 4,
+      "name": "Hossain",
+      "location": "Lohagara Amirabad",
+      "age": 21,
+      "skill": "Mern Stack",
+      "photo": "https://cdn.powerpackelements.com/wp-content/uploads/2017/11/Team-memeber-13.png"
+    },
+    {
+      "id": 5,
+      "name": "Sajjad",
+      "location": "Chittagong",
+      "age": 23,
+      "skill": "PHP Developer",
+      "photo": "https://scontent.fspd5-1.fna.fbcdn.net/v/t39.30808-6/c99.0.395.395a/p526x395/270610970_1421488684914370_8374195226376503272_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeHQQOWjj-2vjMr7c5V5zfaHRdOX27PoptNF05fbs-im0wg719c_SHFY_Uz8qCTV-05ylNWahXpQDCXOP6NBOoDe&_nc_ohc=s5AMs1_UYzoAX8uoHFD&_nc_ht=scontent.fspd5-1.fna&oh=00_AT_nYL5eTTdskETBR4vce22_zjemavaX5KR2fm8y7Jw3xQ&oe=620EDD95"
+    }
+  ]
+}
