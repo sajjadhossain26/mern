@@ -102,7 +102,7 @@ function single_products(id) {
                 <div class="col-md-6">
                   <h4>Phone: ${data.phone}</h4>
                    <div class="price">
-        <span>Regular Price :$110</span><br />
+        <span>Regular Price : ${data.r_price}</span><br />
         <span>Sale price: $99</span>
       </div>
       <button class="btn btn-success">BUY NOW</button>
