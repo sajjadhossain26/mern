@@ -45,21 +45,29 @@
     {
       "id": 1,
       "phone": "samsung s10",
+      "r-price": 500,
+      "l-price": 399,
       "photo": "https://i.gadgets360cdn.com/large/samsung_galaxy_a32_4g_image_1619767465324.jpg?downsize=950:*"
     },
     {
       "id": 2,
       "phone": "samsung m10",
+      "r-price": 806,
+      "l-price": 450,
       "photo": "https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-m01s-m017f-1.jpg"
     },
     {
       "id": 3,
       "phone": "samsung a52",
+      "r-price": 1000,
+      "l-price": 666,
       "photo": "https://www.91-img.com/gallery_images_uploads/7/f/7f0246d5f68733220a394994dbab5c3aac0ce38b.jpeg?tr=h-550,w-0,c-at_max"
     },
     {
       "id": 4,
       "phone": "samsung s21 ultra",
+      "r-price": 1100,
+      "l-price": 999,
       "photo": "https://images.unsplash.com/photo-1610945264803-c22b62d2a7b3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHNhbXN1bmd8ZW58MHx8MHx8&w=1000&q=80"
     }
   ]
