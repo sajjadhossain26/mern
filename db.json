@@ -40,5 +40,27 @@
       "skill": "PHP Developer",
       "photo": "https://scontent.fspd5-1.fna.fbcdn.net/v/t39.30808-6/c99.0.395.395a/p526x395/270610970_1421488684914370_8374195226376503272_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeHQQOWjj-2vjMr7c5V5zfaHRdOX27PoptNF05fbs-im0wg719c_SHFY_Uz8qCTV-05ylNWahXpQDCXOP6NBOoDe&_nc_ohc=s5AMs1_UYzoAX8uoHFD&_nc_ht=scontent.fspd5-1.fna&oh=00_AT_nYL5eTTdskETBR4vce22_zjemavaX5KR2fm8y7Jw3xQ&oe=620EDD95"
     }
+  ],
+  "category": [
+    {
+      "id": 1,
+      "phone": "samsung s10",
+      "photo": "https://i.gadgets360cdn.com/large/samsung_galaxy_a32_4g_image_1619767465324.jpg?downsize=950:*"
+    },
+    {
+      "id": 2,
+      "phone": "samsung m10",
+      "photo": "https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-m01s-m017f-1.jpg"
+    },
+    {
+      "id": 3,
+      "phone": "samsung a52",
+      "photo": "https://www.91-img.com/gallery_images_uploads/7/f/7f0246d5f68733220a394994dbab5c3aac0ce38b.jpeg?tr=h-550,w-0,c-at_max"
+    },
+    {
+      "id": 4,
+      "phone": "samsung s21 ultra",
+      "photo": "https://images.unsplash.com/photo-1610945264803-c22b62d2a7b3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHNhbXN1bmd8ZW58MHx8MHx8&w=1000&q=80"
+    }
   ]
 }

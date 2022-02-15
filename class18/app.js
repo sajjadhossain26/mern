@@ -1,5 +1,5 @@
 const devs = document.querySelector(".devs");
-fetch("http://localhost:2020/devs")
+fetch("https://my-json-server.typicode.com/sajjadhossain26/mern/devs")
   .then((data) => data.json())
   .then((data) => {
     let devs_data = "";
@@ -28,7 +28,7 @@ fetch("http://localhost:2020/devs")
 function single_devs(id) {
   const modal_data = document.querySelector(".modal-data");
   modal_data.innerHTML = "";
-  fetch("http://localhost:2020/devs/" + id)
+  fetch("https://my-json-server.typicode.com/sajjadhossain26/mern/devs/" + id)
     .then((data) => data.json())
     .then((data) => {
       modal_data.innerHTML = `
