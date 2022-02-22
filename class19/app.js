@@ -7,7 +7,7 @@ const delete_btn = document.querySelector(".delete");
 const data_add = document.querySelector(".data-add");
 
 const loadskill = () => {
-  fetch("https://my-json-server.typicode.com/sajjadhossain26/mern/skill")
+  fetch("http://localhost:2020/skill")
     .then((data) => data.json())
     .then((data) => {
       let skill_list = "";
@@ -24,12 +24,10 @@ loadskill();
 getdevelopers();
 
 function getdevelopers() {
-  axios
-    .get("https://my-json-server.typicode.com/sajjadhossain26/mern/devs")
-    .then((res) => {
-      let single_table_data = "";
-      res.data.map((d, index) => {
-        single_table_data += `
+  axios.get("http://localhost:2020/developers").then((res) => {
+    let single_table_data = "";
+    res.data.map((d, index) => {
+      single_table_data += `
          <tr>
                   <td>${index + 1}</td>
                   <td>${d.name}</td>
@@ -57,9 +55,9 @@ function getdevelopers() {
                   </td>
                 </tr>
       `;
-      });
-      showdata.innerHTML = single_table_data;
     });
+    showdata.innerHTML = single_table_data;
+  });
 }
 
 developer_form.addEventListener("submit", function (e) {
@@ -77,7 +75,7 @@ developer_form.addEventListener("submit", function (e) {
     alert("All field are Required!");
   } else {
     axios
-      .post("https://my-json-server.typicode.com/sajjadhossain26/mern/devs", {
+      .post("http://localhost:2020/developers", {
         id: "",
         name: name.value,
         email: email.value,

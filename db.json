@@ -1,233 +1,74 @@
 {
-  "developers": [
+  "devs": [
     {
       "id": 1,
-      "name": "Sajjad ",
-      "email": "sajjad@gmail.com",
-      "photo": "https://scontent.fspd5-1.fna.fbcdn.net/v/t39.30808-6/270610970_1421488684914370_8374195226376503272_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeHQQOWjj-2vjMr7c5V5zfaHRdOX27PoptNF05fbs-im0wg719c_SHFY_Uz8qCTV-05ylNWahXpQDCXOP6NBOoDe&_nc_ohc=tAUQMKEaecsAX90riem&_nc_ht=scontent.fspd5-1.fna&oh=00_AT9-mzblhi7IPRMBMeeQQY81SMVW4xnc-7qN0EVicWdwXw&oe=621A74F3",
-      "skillId": "Mern Stack Developer"
+      "name": "Sajjad Hossain",
+      "location": "Lohagara Amirabad",
+      "age": 20,
+      "skill": "Mern Stack Developer",
+      "photo": "https://scontent.fspd5-1.fna.fbcdn.net/v/t39.30808-6/c99.0.395.395a/p526x395/270610970_1421488684914370_8374195226376503272_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeHQQOWjj-2vjMr7c5V5zfaHRdOX27PoptNF05fbs-im0wg719c_SHFY_Uz8qCTV-05ylNWahXpQDCXOP6NBOoDe&_nc_ohc=s5AMs1_UYzoAX8uoHFD&_nc_ht=scontent.fspd5-1.fna&oh=00_AT_nYL5eTTdskETBR4vce22_zjemavaX5KR2fm8y7Jw3xQ&oe=620EDD95"
     },
     {
       "id": 2,
-      "name": "Hossain",
-      "email": "Hossain@gmail.com",
-      "photo": "https://rnbtheme.com/shortcodes/wp-content/uploads/2016/01/First_m-500x622.png",
-      "skillId": "Wordpress Developer"
+      "name": "Al-Amin",
+      "location": "Mirpur Dhaka",
+      "age": 19,
+      "skill": "IOS Developer",
+      "photo": "https://scontent.fspd5-1.fna.fbcdn.net/v/t39.30808-6/c0.225.1365.1365a/s526x395/269988192_2813277628974595_2771320828781617534_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeHTBzRQ3WzCm8eYmmnyBE9fLOA76dysMrcs4Dvp3Kwytw8i6s0XXD9afpwrWu-x-0UvJHZU9FO6vDT6K3VzyomP&_nc_ohc=OwFtoMlf7J0AX_YJwRs&tn=0-U7YtnGvZLITSub&_nc_ht=scontent.fspd5-1.fna&oh=00_AT_OlMPbbtwVXBebwsqw3QOCzXpbksde9VqIM-4VeWjI0g&oe=620F7699"
     },
     {
       "id": 3,
-      "name": "asdf",
-      "email": "adf",
-      "photo": "ad",
-      "skillId": "Mern Stack Developer"
+      "name": "Asraful Haque",
+      "location": "Dhaka",
+      "age": 25,
+      "skill": "Laravel Developer",
+      "photo": "https://cdn.powerpackelements.com/wp-content/uploads/2017/11/Team-memeber-01.png"
     },
     {
       "id": 4,
-      "name": "ad",
-      "email": "adf",
-      "photo": "adf",
-      "skillId": "Mern Stack Developer"
+      "name": "Hossain",
+      "location": "Lohagara Amirabad",
+      "age": 21,
+      "skill": "Mern Stack",
+      "photo": "https://cdn.powerpackelements.com/wp-content/uploads/2017/11/Team-memeber-13.png"
     },
     {
       "id": 5,
-      "name": "asd",
-      "email": "asdf",
-      "photo": "asdf",
-      "skillId": "Mern Stack Developer"
-    },
-    {
-      "id": 6,
-      "name": "adsf",
-      "email": "adf",
-      "photo": "asdf",
-      "skillId": "Wordpress Developer"
-    },
-    {
-      "id": 7,
-      "name": "asdf",
-      "email": "adsf",
-      "photo": "adsf",
-      "skillId": "Mern Stack Developer"
-    },
-    {
-      "id": 8,
-      "name": "asdf",
-      "email": "adsf",
-      "photo": "adf",
-      "skillId": "Mern Stack Developer"
-    },
-    {
-      "id": 9,
-      "name": "adsf",
-      "email": "afd",
-      "photo": "af"
-    },
-    {
-      "id": 10,
-      "name": "adsf",
-      "email": "adf",
-      "photo": "adf"
-    },
-    {
-      "id": 11,
-      "name": "asdf",
-      "email": "asdf",
-      "photo": "afds",
-      "skillId": "Mern Stack Developer"
-    },
-    {
-      "id": 12,
-      "name": "adf",
-      "email": "asdf",
-      "photo": "adf",
-      "skillId": "Wordpress Developer"
-    },
-    {
-      "id": 13,
-      "name": "asdf",
-      "email": "asdf",
-      "photo": "afsd",
-      "skillId": "PHP Developer"
-    },
-    {
-      "id": 14,
-      "name": "adsf",
-      "email": "adsf",
-      "photo": "adf",
-      "skillId": "Mern Stack Developer"
-    },
-    {
-      "id": 15,
-      "name": "adf",
-      "email": "adsf",
-      "photo": "adsf",
-      "skillId": "Mern Stack Developer"
-    },
-    {
-      "id": 16,
-      "name": "asdf",
-      "email": "asdf",
-      "photo": "asdf",
-      "skillId": "Wordpress Developer"
-    },
-    {
-      "id": 17,
-      "name": "asdf",
-      "email": "asdf",
-      "photo": "afd"
-    },
-    {
-      "id": 18,
-      "name": "asdf",
-      "email": "asdf",
-      "photo": "adsf"
-    },
-    {
-      "id": 19,
-      "name": "adsf",
-      "email": "adfs",
-      "photo": "asdf"
-    },
-    {
-      "id": 20,
-      "name": "asdf",
-      "email": "adf",
-      "photo": "asdf"
-    },
-    {
-      "id": 21,
-      "name": "adsf",
-      "email": "asdf",
-      "photo": "asdf",
-      "skillId": "Mern Stack Developer"
-    },
-    {
-      "id": 22,
-      "name": "adsf",
-      "email": "asdf",
-      "photo": "adsf",
-      "skillId": "Wordpress Developer"
-    },
-    {
-      "id": 23,
-      "name": "asdf",
-      "email": "asdf",
-      "photo": "asdf",
-      "skillId": "Wordpress Developer"
-    },
-    {
-      "id": 24,
-      "name": "adf",
-      "email": "adsf",
-      "photo": "adsf",
-      "skillId": "2"
-    },
-    {
-      "id": 25,
-      "name": "asdf",
-      "email": "adf",
-      "photo": "asdf",
-      "skillId": "3"
-    },
-    {
-      "id": 26,
-      "name": "asdfas",
-      "email": "adsf",
-      "photo": "adf",
-      "skillId": "2"
-    },
-    {
-      "id": 27,
-      "name": "adf",
-      "email": "aadf",
-      "photo": "adf",
-      "skillId": "3"
-    },
-    {
-      "id": 28,
-      "name": "asdf",
-      "email": "adsf",
-      "photo": "afds",
-      "skillId": "Mern Stack Developer"
-    },
-    {
-      "id": 29,
-      "name": "adfa",
-      "email": "adsfdas",
-      "photo": "dsaff",
-      "skillId": "Mern Stack Developer"
+      "name": "Sajjad",
+      "location": "Chittagong",
+      "age": 23,
+      "skill": "PHP Developer",
+      "photo": "https://scontent.fspd5-1.fna.fbcdn.net/v/t39.30808-6/c99.0.395.395a/p526x395/270610970_1421488684914370_8374195226376503272_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeHQQOWjj-2vjMr7c5V5zfaHRdOX27PoptNF05fbs-im0wg719c_SHFY_Uz8qCTV-05ylNWahXpQDCXOP6NBOoDe&_nc_ohc=s5AMs1_UYzoAX8uoHFD&_nc_ht=scontent.fspd5-1.fna&oh=00_AT_nYL5eTTdskETBR4vce22_zjemavaX5KR2fm8y7Jw3xQ&oe=620EDD95"
     }
   ],
-  "skill": [
+  "category": [
     {
       "id": 1,
-      "name": "Mern Stack Developer"
+      "phone": "samsung s10",
+      "rprice": 500,
+      "lprice": 399,
+      "photo": "https://i.gadgets360cdn.com/large/samsung_galaxy_a32_4g_image_1619767465324.jpg?downsize=950:*"
     },
     {
       "id": 2,
-      "name": "Wordpress Developer"
+      "phone": "samsung m10",
+      "rprice": 806,
+      "lprice": 450,
+      "photo": "https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-m01s-m017f-1.jpg"
     },
     {
       "id": 3,
-      "name": "Ios Developer"
+      "phone": "samsung a52",
+      "rprice": 1000,
+      "lprice": 666,
+      "photo": "https://www.91-img.com/gallery_images_uploads/7/f/7f0246d5f68733220a394994dbab5c3aac0ce38b.jpeg?tr=h-550,w-0,c-at_max"
     },
     {
       "id": 4,
-      "name": "PHP Developer"
-    }
-  ],
-  "role": [
-    {
-      "id": 1,
-      "name": "manager"
-    },
-    {
-      "id": 2,
-      "name": "admin"
-    },
-    {
-      "id": 3,
-      "name": "employee"
+      "phone": "samsung s21 ultra",
+      "rprice": 1100,
+      "lprice": 999,
+      "photo": "https://images.unsplash.com/photo-1610945264803-c22b62d2a7b3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHNhbXN1bmd8ZW58MHx8MHx8&w=1000&q=80"
     }
   ]
 }
