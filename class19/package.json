@@ -1,0 +1,14 @@
+{
+  "name": "developers",
+  "version": "1.0.0",
+  "description": "developers data",
+  "main": "app.js",
+  "scripts": {
+    "developers": "json-server --watch db.json --port 2020"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.17.0"
+  }
+}
