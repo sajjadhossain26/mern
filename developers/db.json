@@ -1,0 +1,68 @@
+{
+  "developers": [
+    {
+      "id": "1",
+      "name": "Sajjad Hossain",
+      "email": "sajjad@gmail.com",
+      "photo": "",
+      "skillId": 1,
+      "rollId": 2
+    },
+    {
+      "id": "2",
+      "name": "Rakib Hossain",
+      "email": "rakib@gmail.com",
+      "photo": "",
+      "skillId": 4,
+      "rollId": 3
+    },
+    {
+      "id": "3",
+      "name": "Hossain",
+      "email": "Hossain@gmail.com",
+      "photo": "",
+      "skillId": 3,
+      "rollId": 1
+    },
+    {
+      "id": "4",
+      "name": "Hamid",
+      "email": "Hamid@gmail.com",
+      "photo": "",
+      "skillId": 2,
+      "rollId": 2
+    }
+  ],
+  "skill": [
+    {
+      "id": 1,
+      "name": "Mern Stack Developer"
+    },
+    {
+      "id": 2,
+      "name": "Wordpress Developer"
+    },
+    {
+      "id": 3,
+      "name": "Ios Developer"
+    },
+    {
+      "id": 4,
+      "name": "PHP Developer"
+    }
+  ],
+  "role": [
+    {
+      "id": 1,
+      "name": "manager"
+    },
+    {
+      "id": 2,
+      "name": "admin"
+    },
+    {
+      "id": 3,
+      "name": "employee"
+    }
+  ]
+}
