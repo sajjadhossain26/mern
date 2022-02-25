@@ -58,6 +58,7 @@
         <div class="modal-content">
           <div class="modal-body">
             <form action="#" id="developer_form">
+            
               <input type="text" placeholder="Name" class="form-control m-2" />
               <input type="text" placeholder="Email" class="form-control m-2" />
               <input type="text" placeholder="Photo" class="form-control m-2" />
@@ -78,29 +79,63 @@
     <div class="modal fade" id="viewmodal">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
-          <div class="modal-body">
-            <form action="#"></form>
+          <div class="modal-body text-center viewdata">
+           
           </div>
         </div>
       </div>
     </div>
     <!-- edit modal -->
-    <div class="modal fade" id="#editmodal">
-      <div class="modal-dialog">
+    <div class="modal fade" id="editmodal">
+      <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
-          <div class="modal-header"></div>
-          <div class="modal-body"></div>
-          <div class="modal-footer"></div>
+          <div class="modal-header">
+            <h3>Edit developer form</h3>
+          </div>
+          <div class="modal-body">
+            <form action="#" id="developer_edit_form">
+                <img src="" class="epreview w-100 h-100" alt="">
+                <input type="hidden" placeholder="editId" class="form-control m-2">
+
+              <input type="text" placeholder="eName" class="form-control m-2" />
+              <input
+                type="text"
+                placeholder="eEmail"
+                class="form-control m-2"
+              />
+
+              <input
+                type="text"
+                placeholder="ePhoto"
+                class="form-control m-2"
+              />
+              <input name="" id="" class="form-control m-2 eskills">
+              </input>
+              <input
+                class="btn btn-success w-100 data-add"
+                type="submit"
+                value="ADD Data"
+              />
+            </form>
+          </div>
         </div>
       </div>
     </div>
     <!-- delete modal -->
-    <div class="modal fade" id="#deletemodal">
-      <div class="modal-dialog">
+    <div class="modal fade" id="deletemodal">
+      <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
-          <div class="modal-header"></div>
-          <div class="modal-body"></div>
-          <div class="modal-footer"></div>
+          <div class="modal-body">
+            <h3>Are you sure?</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod,
+              provident.
+            </p>
+            <div class="alert-btn">
+              <button class="btn btn-info" data-bs-dismiss="modal">cancel</button>
+              <button class="btn btn-danger m-delete" data-bs-dismiss="modal" delid="">delete</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>

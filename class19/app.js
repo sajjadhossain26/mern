@@ -5,6 +5,7 @@ const view = document.querySelector(".view");
 const edit = document.querySelector(".edit");
 const delete_btn = document.querySelector(".delete");
 const data_add = document.querySelector(".data-add");
+const developer_edit_form = document.querySelector("#developer_edit_form");
 
 const loadskill = () => {
   fetch("http://localhost:2020/skill")
@@ -41,15 +42,19 @@ function getdevelopers() {
                   <td>
                     <button
                       class="btn btn-primary btn-sm view"
-                      data-bs-toggle="modal"
+                      data-bs-toggle="modal" onclick="view_data(${d.id})"
                       href="#viewmodal"
                     >
                       <i class="fas fa-eye"></i>
                     </button>
-                    <button class="btn btn-info btn-sm edit">
+                    <button class="btn btn-info btn-sm edit" data-bs-toggle="modal" href="#editmodal" onclick="edit_dev(${
+                      d.id
+                    })">
                       <i class="fas fa-edit"></i>
                     </button>
-                    <button class="btn btn-danger btn-sm delete delete(${index})">
+                    <button class="btn btn-danger btn-sm delete" data-bs-toggle="modal" href="#deletemodal" onclick="datadelete(${
+                      d.id
+                    })">
                       <i class="fas fa-trash"></i>
                     </button>
                   </td>
@@ -83,176 +88,81 @@ developer_form.addEventListener("submit", function (e) {
         skillId: skill.value,
       })
       .then((res) => {
-        name.value == "";
-        email.value == "";
-        photo.value == "";
-        skillId.value == "";
+        name.value = "";
+        email.value = "";
+        photo.value = "";
+
         getdevelopers();
       });
   }
 });
+// view developer data
 
-// devs_add_form.addEventListener("submit", function (e) {
-//   e.preventDefault();
+function view_data(id) {
+  const viewdata = document.querySelector(".viewdata");
 
-//   let name = this.querySelector("#name");
-//   let email = this.querySelector("#email");
-//   let photo = this.querySelector("#photo");
-//   let skill = this.querySelector("#skill_list");
+  axios.get(`http://localhost:2020/developers/${id}`).then((res) => {
+    viewdata.innerHTML = `
+   <img src="${res.data.photo}" alt="">
+            <h5>${res.data.name}</h5>
+            <h5>${res.data.skillId}</h5>
+            <h5>${res.data.email}</h5>
+  `;
+  });
+}
+// edit developer form
 
-//   if (name.value == "") {
-//     alert("All fields are required !");
-//   } else {
-//     axios
-//       .post("https://my-json-server.typicode.com/sajjadhossain26/mern/devs", {
-//         id: "",
-//         name: name.value,
-//         email: email.value,
-//         photo: photo.value,
-//         skillId: skill.value,
-//       })
-//       .then((res) => {
-//         name.value = "";
-//         email.value = "";
-//         photo.value = "";
-//         skill.value = "";
+function edit_dev(id) {
+  let name = document.querySelector("input[placeholder='eName']");
+  let email = document.querySelector("input[placeholder='eEmail']");
+  let photo = document.querySelector("input[placeholder='ePhoto']");
+  let editId = document.querySelector("input[placeholder='editId']");
+  let skill = document.querySelector(".eskills");
+  let preview = document.querySelector(".epreview");
+  axios.get(`http://localhost:2020/developers/${id}`).then((res) => {
+    name.value = res.data.name;
+    email.value = res.data.email;
+    photo.value = res.data.photo;
+    skill.value = res.data.skillId;
+    editId.value = res.data.id;
+    preview.setAttribute("src", res.data.photo);
+  });
+}
+developer_edit_form.addEventListener("submit", function (e) {
+  e.preventDefault();
+  let name = document.querySelector("input[placeholder='eName']");
+  let email = document.querySelector("input[placeholder='eEmail']");
+  let photo = document.querySelector("input[placeholder='ePhoto']");
+  let editId = document.querySelector("input[placeholder='editId']");
+  let skill = document.querySelector(".eskills");
+  let preview = document.querySelector(".epreview");
 
-//         getDevelopers();
-//       });
-//   }
-// });
+  axios
+    .patch(`http://localhost:2020/developers/${editId.value}`, {
+      id: "",
+      name: name.value,
+      email: email.value,
+      photo: photo.value,
+      skillId: skill.value,
+    })
+    .then((res) => {
+      name.value = "";
+      email.value = "";
+      photo.value = "";
+      skill.value = "";
+      getdevelopers();
+    });
+});
 
-// get elements
-// const skills = document.querySelector("#skill_list");
-// const devs_add_form = document.querySelector("#devs_add_form");
-// const devs_edit_form = document.querySelector("#devs_edit_form");
-// const devs_data_list = document.querySelector("#devs_data_list");
-// const devs_edit_btns = document.querySelectorAll(".devs_edit_btn");
+// delete data
+let d_data = document.querySelector(".m-delete");
 
-// console.log(skills);
-
-// // load all skills form api
-// const loadSkills = () => {
-//   axios.get("http://localhost:2020/skill").then((skill) => {
-//     let skill_list = "";
-//     skill.data.map((skill) => {
-//       skill_list += `
-//                 <option value="${skill.id}">${skill.name}</option>
-//             `;
-//     });
-//     skills.insertAdjacentHTML("beforeend", skill_list);
-//   });
-// };
-// loadSkills();
-
-// /**
-//  * All devs Load
-//  */
-// getDevelopers();
-// function getDevelopers() {
-//   axios.get("http://localhost:2020/developers").then((res) => {
-//     let dev_data = "";
-//     res.data.map((dev, index) => {
-//       dev_data += `
-//             <tr>
-//                 <td>${index + 1}</td>
-//                 <td>${dev.name}</td>
-//                 <td>${dev.email}</td>
-//                 <td><img style="object-fit:cover; width:50px;height:50px;" src="${
-//                   dev.photo
-//                 }" alt=""></td>
-//                 <td>
-//                     <a data-bs-toggle="modal" class="btn btn-info btn-sm" href="#modal_view"><i class="fa fa-eye"></i></a>
-//                     <a data-bs-toggle="modal" class="btn btn-warning btn-sm" onclick="editDeveloper(${
-//                       dev.id
-//                     })"  href="#modal_edit"><i class="fa fa-edit"></i></a>
-//                     <a data-bs-toggle="modal" class="btn btn-danger btn-sm" href="#modal_delete"><i class="fa fa-trash"></i></a>
-//                 </td>
-//             </tr>
-//             `;
-//     });
-
-//     devs_data_list.innerHTML = dev_data;
-//   });
-// }
-
-// /**
-//  * Add new devs
-//  */
-// devs_add_form.addEventListener("submit", function (e) {
-//   e.preventDefault();
-
-//   let name = this.querySelector("#name");
-//   let email = this.querySelector("#email");
-//   let photo = this.querySelector("#photo");
-//   let skill = this.querySelector("#skill_list");
-
-//   if (name.value == "" || email.value == "" || skill.value == "") {
-//     alert("All fields are required !");
-//   } else {
-//     axios
-//       .post("http://localhost:2020/developers", {
-//         id: "",
-//         name: name.value,
-//         email: email.value,
-//         photo: photo.value,
-//         skillId: skill.value,
-//       })
-//       .then((res) => {
-//         name.value = "";
-//         email.value = "";
-//         photo.value = "";
-//         skill.value = "";
-
-//         getDevelopers();
-//       });
-//   }
-// });
-
-// /**
-//  * Develoeprs Data Edit
-//  */
-// function editDeveloper(id) {
-//   let name = document.getElementById("ename");
-//   let email = document.getElementById("eemail");
-//   let photo = document.getElementById("ephoto");
-//   let skill = document.getElementById("eskill_list");
-//   let preview = document.getElementById("epreview");
-//   let edit_id = document.getElementById("edit_id");
-
-//   axios.get(`http://localhost:2020/developers/${id}`).then((res) => {
-//     name.value = res.data.name;
-//     email.value = res.data.email;
-//     photo.value = res.data.photo;
-//     skill.value = res.data.skillId;
-//     edit_id.value = id;
-//     preview.setAttribute("src", res.data.photo);
-//   });
-// }
-
-// devs_edit_form.addEventListener("submit", function (e) {
-//   e.preventDefault();
-
-//   let name = this.querySelector("#ename");
-//   let email = this.querySelector("#eemail");
-//   let photo = this.querySelector("#ephoto");
-//   let skill = this.querySelector("#eskill_list");
-//   let edit_id = this.querySelector("#edit_id");
-
-//   axios
-//     .patch(`http://localhost:2020/developers/${edit_id.value}`, {
-//       id: "",
-//       name: name.value,
-//       email: email.value,
-//       photo: photo.value,
-//       skillId: skill.value,
-//     })
-//     .then((res) => {
-//       name.value = "";
-//       email.value = "";
-//       photo.value = "";
-//       skill.value = "";
-
-//       getDevelopers();
-//     });
-// });
+function datadelete(id) {
+  d_data.setAttribute("delid", id);
+}
+d_data.addEventListener("click", function () {
+  let d_id = this.getAttribute("delid");
+  axios.delete(`http://localhost:2020/developers/${d_id}`).then((res) => {
+    getdevelopers();
+  });
+});
