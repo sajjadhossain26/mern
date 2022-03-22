@@ -1,0 +1,71 @@
+{
+  "developers": [
+    {
+      "id": 1,
+      "name": "Sajjad",
+      "email": "sajjad@gmail.com",
+      "photo": "https://scontent.fcgp7-1.fna.fbcdn.net/v/t39.30808-6/270610970_1421488684914370_8374195226376503272_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeHQQOWjj-2vjMr7c5V5zfaHRdOX27PoptNF05fbs-im0wg719c_SHFY_Uz8qCTV-05ylNWahXpQDCXOP6NBOoDe&_nc_ohc=Dd4b8_qSw10AX8-nHiE&_nc_ht=scontent.fcgp7-1.fna&oh=00_AT8DJ0A6bm6EE_mVZDt5BuWynL8U8S_iEbBXMzkbVUFLmA&oe=622C4133",
+      "skillId": "1"
+    },
+    {
+      "id": 3,
+      "name": "Sajjad Hossain",
+      "email": "SajjadHossain.com",
+      "photo": "https://scontent.fcgp7-1.fna.fbcdn.net/v/t39.30808-6/273678563_1453267391736499_7131873336390809029_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=8bfeb9&_nc_eui2=AeGhsa7EsWSZl91Lzp9DpgHDMkl4ePXM_1cySXh49cz_V0nnxLnZJbQW9GXhVIgJLBOnxqGoXANddU45snjnpNFQ&_nc_ohc=r05ZC5dazlYAX-CEu2u&tn=0-U7YtnGvZLITSub&_nc_ht=scontent.fcgp7-1.fna&oh=00_AT9Uldet12h8MWGWvZJLPwaT00wpesr42_quuuW-MYa1sA&oe=622DB7B9",
+      "skillId": 3
+    },
+    {
+      "id": 4,
+      "name": "Hamid",
+      "email": "hamid@gmail.coms",
+      "photo": "http://aliensix.com/particles-1.3/HTML/images/team-member-1.jpg",
+      "skillId": "2"
+    },
+    {
+      "id": 5,
+      "name": "Saimon",
+      "email": "saimon@gmail.com",
+      "photo": "https://unitedthemes.com/wp-content/uploads/2018/09/team2.jpg",
+      "skillId": "1"
+    },
+    {
+      "id": 6,
+      "name": "Hossain",
+      "email": "hossain@gmail.com",
+      "skillId": "3",
+      "photo": "https://scontent.fcgp7-1.fna.fbcdn.net/v/t39.30808-1/271547251_10221668395318941_1938174359673295619_n.jpg?stp=c0.12.200.200a_dst-jpg_p200x200&_nc_cat=111&ccb=1-5&_nc_sid=7206a8&_nc_eui2=AeGHrsBoVMXVKBAKOSCk1WXCbVX3-HfzPKZtVff4d_M8ptY-j4coAjYaXw1_1Ft6njgi6S6kvXohQdLHoTA3Kz1r&_nc_ohc=VywqxcoTWdgAX_yzYYD&_nc_ht=scontent.fcgp7-1.fna&oh=00_AT9CQBRThBK5oCAOkzWNBvB6nLLhcY9JXh4fQeQr5LMHWA&oe=622E2864"
+    }
+  ],
+  "skill": [
+    {
+      "id": 1,
+      "name": "Mern Stack Developer"
+    },
+    {
+      "id": 2,
+      "name": "Wordpress Developer"
+    },
+    {
+      "id": 3,
+      "name": "Ios Developer"
+    },
+    {
+      "id": 4,
+      "name": "PHP Developer"
+    }
+  ],
+  "role": [
+    {
+      "id": 1,
+      "name": "manager"
+    },
+    {
+      "id": 2,
+      "name": "admin"
+    },
+    {
+      "id": 3,
+      "name": "employee"
+    }
+  ]
+}

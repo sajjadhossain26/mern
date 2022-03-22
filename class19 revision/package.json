@@ -1,0 +1,14 @@
+{
+  "name": "class19-revision",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "admin": "json-server --watch db.json --port 2020"
+  },
+  "author": "Sajjad",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.17.0"
+  }
+}

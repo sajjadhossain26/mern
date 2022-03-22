@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.clock {
+  width: 400px;
+  height: 400px;
+  background: wheat;
+  margin: auto;
+  background-image: url(../class15/img/clock.png);
+  background-size: cover;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.clock::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  position: absolute;
+  border-radius: 5px;
+}
+.s {
+  height: 272px;
+  width: 0px;
+
+  display: flex;
+  justify-content: center;
+  transform: rotate(0deg);
+}
+.s::before {
+  content: "";
+  width: 5px;
+  height: 156px;
+  background-color: black;
+  position: absolute;
+}
+.m {
+  height: 202px;
+  width: 0px;
+
+  display: flex;
+  justify-content: center;
+  transform: rotate(10deg);
+}
+.m::before {
+  content: "";
+  width: 10px;
+  height: 120px;
+  background-color: red;
+  position: absolute;
+}
+.h {
+  height: 170px;
+  width: 0px;
+
+  display: flex;
+  justify-content: center;
+  transform: rotate(100deg);
+}
+.h::before {
+  content: "";
+  width: 15px;
+  height: 100px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+}
+/* calculator app */
+.cal {
+  width: 400px;
+  height: auto;
+  margin: auto;
+  border-radius: 10px;
+}
+.card {
+  border: none;
+}
+.monitor {
+  background-color: black;
+  color: white;
+  text-align: right;
+  padding: 20px;
+  border-radius: 10px 10px 0px 0px;
+}
+.cal-button {
+  overflow: hidden;
+}
+.cal-button button {
+  width: 23%;
+  border: none;
+  float: left;
+  padding: 20px;
+  background-color: red;
+  margin: 1%;
+  border-radius: 5px;
+  box-shadow: 3px 3px 9px 0px black;
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+}

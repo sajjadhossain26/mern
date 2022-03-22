@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- checkbox instant result app -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 m-auto">
+          <div class="card shadow">
+            <div class="card-body">
+              <input type="checkbox" id="mern" value="mern" /><label for="mern"
+                >mern</label
+              ><br />
+              <input type="checkbox" id="laravel" value="laravel" /><label
+                for="laravel"
+                >laravel</label
+              ><br />
+              <input type="checkbox" id="php" value="php" /><label for="php"
+                >php</label
+              ><br />
+              <input type="checkbox" id="python" value="python" /><label
+                for="python"
+                >python</label
+              ><br />
+              <input type="checkbox" id="golang" value="golang" /><label
+                for="golang"
+                >golang</label
+              >
+              <hr />
+              <ul class="list-group"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- analog app -->
+
+    <div class="clock">
+      <div class="s"></div>
+      <div class="m"></div>
+      <div class="h"></div>
+    </div>
+
+    <!-- calculator app -->
+    <div class="cal">
+      <div class="card shadow">
+        <div class="monitor">
+          <div class="top-monitor">
+            <span>0</span>
+          </div>
+          <div class="bottom-monitor">0</div>
+        </div>
+        <div class="cal-button">
+          <button onclick="clears()" style="width: 48%">AC</button>
+          <button onclick="back()" style="width: 48%">C</button>
+
+          <button onclick="get_val(7)">7</button>
+          <button onclick="get_val(8)">8</button>
+          <button onclick="get_val(9)">9</button>
+          <button onclick="get_val('/')">/</button>
+          <button onclick="get_val(4)">4</button>
+          <button onclick="get_val(5)">5</button>
+          <button onclick="get_val(6)">6</button>
+          <button onclick="get_val('*')">*</button>
+          <button onclick="get_val(1)">1</button>
+          <button onclick="get_val(2)">2</button>
+          <button onclick="get_val(3)">3</button>
+          <button onclick="get_val('-')">-</button>
+          <button onclick="get_val(0)">0</button>
+          <button onclick="get_val('.')">.</button>
+          <button onclick="result()">=</button>
+          <button onclick="get_val('+')">+</button>
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>

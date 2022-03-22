@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.accordion {
+  width: 600px;
+  background-color: wheat;
+  margin: auto;
+  margin-bottom: 10px;
+}
+.accordion .accordion-header {
+  background-color: rgb(184, 181, 33);
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-around;
+}
+.accordion .accordion-header::after {
+  content: "\2192";
+  font-size: 20px;
+  margin-top: 8px;
+  transition: 0.3s;
+}
+.accordion .accordion-header.active::after {
+  transform: rotate(90deg);
+  transition: 0.3s;
+}
+.accordion .accordion-body {
+  transition: 0.3s;
+  height: 0px;
+  overflow: hidden;
+}
+
+.accordion .accordion-body .accordion-content {
+  padding: 20px;
+}
+
+/* tab app */
+.tab {
+  width: 600px;
+  margin: auto;
+}
+
+.tab-header ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.tab-header ul li {
+  width: 20%;
+  height: 50px;
+  display: block;
+  line-height: 50px;
+}
+.tab-header ul li a {
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px solid #ccc;
+}
+.tab-header ul li a.active {
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom: none;
+}
+.pane {
+  margin-top: 10px;
+  display: none;
+}
+.pane.active {
+  display: block;
+}
