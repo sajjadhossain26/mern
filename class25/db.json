@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "alo",
+      "price": 90,
+      "photo": "https://static.toiimg.com/photo/60794663.cms"
+    },
+    {
+      "id": 2,
+      "name": "Potol",
+      "price": 110,
+      "photo": "https://t4.ftcdn.net/jpg/02/77/02/37/360_F_277023747_dvZdnpibMaHeSdi5xvQAKdo84R434x4Y.jpg"
+    },
+    {
+      "id": 3,
+      "name": "alo recipy",
+      "price": 300,
+      "photo": "https://www.indrani-will-teach.com/wp-content/uploads/2017/10/DSC00456.jpg"
+    },
+    {
+      "id": 4,
+      "name": "potol recipy",
+      "price": 900,
+      "photo": "https://www.archanaskitchen.com/images/archanaskitchen/1-Author/jyothir/Bengali_Potol_Bhaja.jpg"
+    }
+  ]
+}
