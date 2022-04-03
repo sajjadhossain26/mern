@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App js</title>
+  </head>
+  <body>
+    <!-- create post -->
+    <div class="container my-5">
+      <div class="row col-md-5 m-auto">
+        <div class="card shadow">
+          <div class="card-body">
+            <div class="create-post d-flex justify-content-lg-between">
+              <img
+                src="https://scontent.fdac14-1.fna.fbcdn.net/v/t39.30808-6/273678563_1453267391736499_7131873336390809029_n.jpg?stp=dst-jpg_s600x600&_nc_cat=102&ccb=1-5&_nc_sid=8bfeb9&_nc_eui2=AeGhsa7EsWSZl91Lzp9DpgHDMkl4ePXM_1cySXh49cz_V0nnxLnZJbQW9GXhVIgJLBOnxqGoXANddU45snjnpNFQ&_nc_ohc=JmBeYZSXE5QAX-Kr4Lc&tn=0-U7YtnGvZLITSub&_nc_ht=scontent.fdac14-1.fna&oh=00_AT8F9l3tHn7QzxGO38Oa91p_QQAGjoULnszWIy3dysBc8Q&oe=62496739"
+                alt=""
+              />
+              <button data-bs-toggle="modal" data-bs-target="#showmodal">
+                Whats on your mind, Sajjad?
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- show post -->
+    <div class="container my-5">
+      <div class="row col-md-5 m-auto allpostshow"></div>
+    </div>
+
+    <!-- post modal -->
+    <div class="modal fade" id="showmodal">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3>Create a Form</h3>
+          </div>
+          <div class="modal-body">
+            <div class="msg"></div>
+            <form module="POST" id="createPostForm">
+              <input
+                class="form-control my-2"
+                type="text"
+                name="name"
+                placeholder="Your name?"
+                id=""
+              />
+              <input
+                class="form-control my-2"
+                type="text"
+                name="uimage"
+                placeholder="User Image"
+                id=""
+              />
+              <input
+                class="form-control my-2"
+                type="text"
+                name="content"
+                placeholder="Whats on your mind?"
+                id=""
+              />
+              <input
+                class="form-control my-2"
+                type="text"
+                name="image"
+                placeholder="Image"
+                id=""
+              />
+              <input
+                class="btn btn-info w-100 my-2"
+                type="submit"
+                value="Post"
+                id=""
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
