@@ -1,0 +1,53 @@
+{
+    "devs": [
+        {
+            "id": 1,
+            "name": "sajjad",
+            "skill": "IOS"
+        },
+          {
+            "id": 2,
+            "name": "sajjad",
+            "skill": "IOS"
+        },
+          {
+            "id": 3,
+            "name": "sajjad",
+            "skill": "IOS"
+        }
+    ],
+    "students": [
+        {
+            "id": 1,
+            "name": "sajjad",
+            "skill": "IOS"
+        },
+          {
+            "id": 2,
+            "name": "sajjad",
+            "skill": "IOS"
+        },
+          {
+            "id": 3,
+            "name": "sajjad",
+            "skill": "IOS"
+        }
+    ],
+    "products": [
+        {
+            "id": 1,
+            "name": "alo",
+            "skill": "IOS"
+        },
+          {
+            "id": 2,
+            "name": "potol",
+            "skill": "IOS"
+        },
+          {
+            "id": 3,
+            "name": "sajjad",
+            "skill": "IOS"
+        }
+    ]
+}

@@ -1,0 +1,81 @@
+{
+  "products": [
+    {
+      "name": "পুরুষদের ফ্যাশন শর্ট স্লিভ টি শার্ট ",
+      "slug": "পুরুষদের-ফ্যাশন-শর্ট-স্লিভ-টি-শার্ট-",
+      "regular_price": "999",
+      "sale_price": "299",
+      "description": "অল্প দামে অনেক ভালো গেঞ্জি যেমনটা অর্ডার করছিলাম ঠিক তেমনি পেয়েছি ধন্যবাদ",
+      "rating": "5",
+      "tagId": "1",
+      "categoryId": "1",
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRoz4pL49ctFG4pF59qivt8yRZFT5d0dVa2g&usqp=CAU",
+      "id": 1
+    },
+    {
+      "name": "পুরুষদের ফ্যাশন শর্ট স্লিভ টি শার্ট",
+      "slug": "পুরুষদের-ফ্যাশন-শর্ট-স্লিভ-টি-শার্ট",
+      "regular_price": "500",
+      "sale_price": "100",
+      "description": "যেমনটা চেয়েছি তেমনটাই পেয়েছি",
+      "rating": "4",
+      "tagId": "4",
+      "categoryId": "13",
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCd7mVvVSHLrQFPF_Q5CUT_ExSIhOP0DsjgA&usqp=CAU",
+      "id": 2
+    },
+    {
+      "name": "পুরুষদের স্টাইলিশ মেরুন পাঞ্জাবি",
+      "slug": "পুরুষদের-স্টাইলিশ-মেরুন-পাঞ্জাবি",
+      "regular_price": "500",
+      "sale_price": "299",
+      "description": "very nice",
+      "rating": "5",
+      "tagId": "4",
+      "categoryId": "12",
+      "photo": "https://i0.wp.com/www.itemsmart.com.bd/wp-content/uploads/2021/07/FV4A9263-copy.jpg?fit=500%2C750&ssl=1",
+      "id": 3
+    },
+    {
+      "name": "ভাঁজ করা ফ্যান ব্লেড led লাইট ",
+      "slug": "ভাঁজ-করা-ফ্যান-ব্লেড-led-লাইট-",
+      "regular_price": "9000",
+      "sale_price": "",
+      "description": "Awesome product",
+      "rating": "5",
+      "tagId": "2",
+      "categoryId": "1",
+      "photo": "https://nirmaan.com.bd/wp-content/uploads/2020/09/42-Inch-Ceiling-Fan-with-Remote-Crystal-Chandelier-Fans-with-Retractable-Blades.nirmaan.jpg",
+      "id": 4
+    }
+  ],
+  "category": [
+    {
+      "id": 1,
+      "name": "led light",
+      "slug": "led-light"
+    },
+    {
+      "id": 12,
+      "name": "Mobile",
+      "slug": "mobile"
+    },
+    {
+      "id": 13,
+      "name": "T shirt",
+      "slug": "t-shirt"
+    }
+  ],
+  "tag": [
+    {
+      "id": 2,
+      "tag": "led",
+      "slug": "led"
+    },
+    {
+      "id": 4,
+      "tag": "panjabi",
+      "slug": "panjabi"
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,500&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400&display=swap");
+img {
+  width: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+.header {
+  background-color: white;
+}
+.header img {
+  width: 100px;
+  margin-top: 10px;
+}
+.header .menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.header .menu ul li {
+  padding: 20px 10px;
+}
+.header .icon ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .icon ul li {
+  display: inline-block;
+}
+.header .icon ul li i {
+  line-height: 54px;
+  padding: 7px;
+}
+/* home section css */
+.home_section {
+  background-image: url(https://www.portotheme.com/wordpress/porto/corporate1/wp-content/uploads/sites/7/2018/12/bg-corporate-1-1.jpg?id=1998);
+  background-repeat: no-repeat;
+  background-position: cover;
+  padding: 120px;
+  display: flex;
+  align-items: center;
+}
+.home_section h1 {
+  font-size: 100px;
+  font-weight: 900;
+  color: #b8ddef;
+  letter-spacing: 0px;
+  text-anchor: middle;
+}
+.home_section p {
+  color: white;
+}
+.started {
+  background-color: #212529;
+  padding: 50px;
+  color: white;
+}
+.tran-btn {
+  background-color: transparent;
+  border: none;
+  color: white;
+  margin-left: 10px;
+}
+.col-md-4.float-end {
+  text-align: right;
+}
+.third-section {
+  padding: 100px;
+}
+.third-section h3 {
+  font-weight: 800;
+  font-size: 30px;
+}
+
+.third-section img {
+  position: static;
+  top: 0;
+  z-index: -99;
+  height: 391px;
+  object-fit: cover;
+}
+/* our service */
+.our-service {
+  background-color: #ededed;
+  padding: 100px 0px;
+}
+.blurb.d-flex h6 {
+  font-weight: 700;
+}
+.blurb.d-flex .blurb-icon {
+  color: #108ece;
+  font-size: 30px;
+  margin-right: 28px;
+}
+section.our-service span {
+  font-weight: 800;
+}
+section.our-service h5 {
+  margin-bottom: 39px;
+  font-size: 27px;
+}
+/* forth section */
+section.forth-section .container {
+  text-align: center;
+  padding: 100px 0px;
+  border-bottom: 1px solid #ccc;
+}
+
+section.forth-section i {
+  font-size: 30px;
+}
+section.forth-section h3 {
+  font-weight: 800;
+  font-size: 34px;
+}
+/* footer css */
+.footer {
+  background-image: url(https://www.portotheme.com/wordpress/porto/corporate1/wp-content/uploads/sites/7/2018/12/parallax-8.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding-top: 100px;
+}
+.footer img {
+  width: 150px;
+}
+.footer a {
+  display: block;
+  text-decoration: none;
+  font-size: 10px;
+  color: #ccc;
+  margin-top: 5px;
+}
+.footer a:hover {
+  color: white;
+}
+.footer i {
+  color: #1a74c7;
+  margin-right: 3px;
+}
+.form input {
+  background: #dedfdf;
+  border: none;
+  padding: 11px 16px;
+  border-radius: 20px 0px 0px 20px;
+}
+.form input {
+  background: #dedfdf;
+  border: none;
+  padding: 11px 30px;
+}
+input.submit {
+  border-radius: 0px 20px 20px 0px;
+  border-left: 1px solid #ccc;
+}
+.form-info a {
+  margin-right: 10px;
+  margin-top: 10px;
+  color: white;
+  font-size: 13px;
+}
+.footer .copyright p {
+  color: #555;
+  font-size: 11px;
+  margin-top: 30px;
+}

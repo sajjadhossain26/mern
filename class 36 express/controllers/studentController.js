@@ -1,5 +1,5 @@
 const fs = require('fs');
-const { rewriter } = require('json-server');
+// const { rewriter } = require('json-server');
 const path = require('path')
 
 const students= JSON.parse(fs.readFileSync(path.join(__dirname, '../data/students.json')))

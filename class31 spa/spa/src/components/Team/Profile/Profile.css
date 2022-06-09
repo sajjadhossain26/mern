@@ -1,0 +1,22 @@
+body{
+    background-color: #ccc;
+}
+.profile{
+    text-align: center;
+}
+.profile .profile-image img{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    margin: auto;
+}
+.team-icon.profile-icon {
+    display: flex;
+}
+span{
+    color: red;
+}
+.team-icon.profile-icon ul {
+
+    margin: auto;
+}

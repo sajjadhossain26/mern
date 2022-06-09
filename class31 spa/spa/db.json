@@ -1,0 +1,28 @@
+{
+    "devs": [{
+        "id": 1,
+        "name": "Sajjad Hossain",
+        "username": "sajjad",
+        "photo": "https://cdn.statically.io/img/developersajjad.me/f=auto/wp-content/uploads/2021/12/developersajjad-scaled.jpg",
+        "skill": "Mern Stack Developer",
+        "email": "sajjad26@gmail.com",
+        "cell":"01865243109",
+        "fb": "#",
+        "tw": "#",
+        "li": "#"
+    },
+    {
+        "id": 2,
+        "name": "Hossain",
+        "username": "hos",
+        "photo": "https://cdn.statically.io/img/developersajjad.me/f=auto/wp-content/uploads/2021/12/devsajjad-scaled.jpg",
+        "skill": "IOS Developer",
+        "email": "sajjad@gmail.com",
+        "cell":"01882279579",
+        "fb": "#",
+        "tw": "#",
+        "li": "#"
+    }
+
+]
+}

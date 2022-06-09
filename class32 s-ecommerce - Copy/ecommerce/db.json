@@ -1,0 +1,47 @@
+{
+  "products": [],
+  "category": [
+    {
+      "id": 1,
+      "name": "Sajjad hossain",
+      "slug": "sajjad-hossain"
+    },
+    {
+      "id": 12,
+      "name": "mohammod saimon",
+      "slug": "mohammod-saimon"
+    },
+    {
+      "id": 13,
+      "name": "Sajjad Hossain",
+      "slug": "sajjad-hossain"
+    },
+    {
+      "id": 14,
+      "name": "Hello world",
+      "slug": "hello-world"
+    }
+  ],
+  "tag": [
+    {
+      "id": 1,
+      "tag": "sajjad hossain",
+      "slug": "sajjad-hossain"
+    },
+    {
+      "id": 2,
+      "tag": "Hello world js",
+      "slug": "hello-world-js"
+    },
+    {
+      "id": 3,
+      "tag": "kemon acen brother",
+      "slug": "kemon-acen-brother"
+    },
+    {
+      "id": 4,
+      "tag": "sajjad",
+      "slug": "sajjad"
+    }
+  ]
+}

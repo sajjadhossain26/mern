@@ -1,0 +1,42 @@
+.team {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.team-member .card {
+  margin-top: 20px;
+}
+.team .team-image img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.team .team-content span {
+  color: red;
+  font-size: 14px;
+}
+.team .team-content p {
+  font-style: italic;
+}
+.team-icon ul{
+  display: flex;
+  list-style: none;
+  padding: 0px;
+
+}
+.team-icon ul li a{
+  display: block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #333;
+  text-align: center;
+  border-radius: 50%;
+  margin-right: 6px;
+  
+}
+.team-icon ul li i{
+  color: #333;
+}
