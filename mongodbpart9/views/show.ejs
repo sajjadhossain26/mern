@@ -1,0 +1,25 @@
+     <div class="container my-5">
+        <div class="row">
+            <div class="col-md-8 m-auto">
+                <a class="btn btn-primary mb-2" href="/students">Back</a>
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Show single Student Student</h3>
+                    </div>
+                    <div class="card-body d-flex">
+                     
+                      <img style="width: 300px; height: 300px; object-fit: cover;" src="/assets/upload/<%= singleData.photo %> " alt="">
+
+                       <div class="info" style="margin-left: 20px;display: flex; align-items: center;">
+                       <div class="single-info">
+                         <h4 ><%= singleData.name %></h4>
+                        <h4 ><%= singleData.email %></h4>
+                        <h4 ><%= singleData.cell %></h4>
+                       </div>
+                        
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </div>
